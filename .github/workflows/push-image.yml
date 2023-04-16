@@ -40,4 +40,4 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            VITE_IDENTITY_SERVICE_BASE_URL=${{ vars.IDENTITY_SERVICE_BASE_URL }}
+            VITE_IDENTITY_SERVICE_BASE_URL=${{ env.IDENTITY_SERVICE_BASE_URL }}
