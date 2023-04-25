@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecommerce-login-ui-deployment
+  labels:
+    app: ecommerce-login-ui-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ecommerce-login-ui-deployment
+  template:
+    metadata:
+      labels:
+        app: ecommerce-login-ui-deployment
+    spec:
+      containers:
+        - name: ecommerce-login-ui-container
+          image: ghcr.io/jamess-lucass/ecommerce-login-ui:latest
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 80
+          resources:
+            requests:
+              memory: 100Mi
+              cpu: 100m
+            limits:
+              memory: 200Mi
+              cpu: 200m
