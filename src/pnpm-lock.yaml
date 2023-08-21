@@ -15,8 +15,8 @@ dependencies:
     specifier: 0.5.0
     version: 0.5.0(solid-js@1.7.11)
   zod:
-    specifier: 3.22.0
-    version: 3.22.0
+    specifier: 3.22.2
+    version: 3.22.2
 
 devDependencies:
   autoprefixer:
@@ -1565,6 +1565,6 @@ packages:
     engines: {node: '>= 14'}
     dev: true
 
-  /zod@3.22.0:
-    resolution: {integrity: sha512-y5KZY/ssf5n7hCGDGGtcJO/EBJEm5Pa+QQvFBeyMOtnFYOSflalxIFFvdaYevPhePcmcKC4aTbFkCcXN7D0O8Q==}
+  /zod@3.22.2:
+    resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
     dev: false
