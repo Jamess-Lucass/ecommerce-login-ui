@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: ecommerce-login-ui-service
+  name: ecommerce-login-ui
 spec:
   selector:
-    app: ecommerce-login-ui-deployment
+    app: ecommerce-login-ui
   ports:
     - protocol: TCP
       targetPort: 80

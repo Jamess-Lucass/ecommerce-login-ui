@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ecommerce-login-ui-deployment
+  name: ecommerce-login-ui
   labels:
-    app: ecommerce-login-ui-deployment
+    app: ecommerce-login-ui
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ecommerce-login-ui-deployment
+      app: ecommerce-login-ui
   template:
     metadata:
       labels:
-        app: ecommerce-login-ui-deployment
+        app: ecommerce-login-ui
     spec:
       containers:
-        - name: ecommerce-login-ui-container
+        - name: ecommerce-login-ui
           image: ghcr.io/jamess-lucass/ecommerce-login-ui:latest
           imagePullPolicy: Always
           ports:
