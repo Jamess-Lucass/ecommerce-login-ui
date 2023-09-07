@@ -8,6 +8,9 @@ services:
       dockerfile: Dockerfile
       args:
         - VITE_IDENTITY_SERVICE_BASE_URL=http://localhost:1000
+        - VITE_ELASTIC_APM_SERVER_URL=http://localhost:8200
+        - VITE_ELASTIC_APM_SERVICE_NAME=login-ui
+        - VITE_ELASTIC_APM_DISTRIBUTED_TRACE_ORIGINS=http?:\/\/localhost
     container_name: ecommerce-login-ui
     ports:
       - 2000:80
